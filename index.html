@@ -9,32 +9,60 @@
 <body>
     <div class="main">
         <div class="left-side">
-            <img src="images/bg-photo.avif" alt="A leafy greenish stuff">
-                <div class="logo-container">
-                    <img class="odin-icon" src="images/odin-lined.png" alt="Odin logo">
-                    <p class="odin-text">ODIN</p>
-            </div>
-            <div class="photo-credit">Photo by Halie West on Unsplash</div>
+            <header>
+                <img src="images/odin-lined.png" alt="Odin logo">
+                <h1 class="logo-text">ODIN</h1>
+            </header>
+            <footer>
+                <p>Photo by Halie West on Unsplash</p>
+            </footer>
         </div>
 
         <div class="right-side">
             <div class="top-side">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
                 <p>Sign up now to get started.</p>
-                <p>You know you want to.</p>
+                <p class="subtitle">You know you want to.</p>
             </div>
             <fieldset>
-                <legend>Contact Details</legend>
+                <h1>Let's do this!</h1>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name">
+                     </div>    
+                     <div class="form-group">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>  
+                </div>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>  
 
-                <label for="phone_number">Phone Number:</label>
-                <input type="tel" id="phone_number" name="phone_number">
+                    <div class="form-group">
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="tel" id="phone_number" name="phone_number">
+                    </div>  
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="user_password">PASSWORD</label>
+                        <input type="password" id="user_password" name="password" required>
+                    </div>  
+
+                    <div class="form-group">
+                        <label for="confirm_user_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_user_password" name="confirm_user_password" required>
+                    </div>  
+                </div>
+
             </fieldset>
+            
             <div class="bottom-side">
                 <button type="submit">Create Account</button>
                 <p>Already have an account? Log in</p>
